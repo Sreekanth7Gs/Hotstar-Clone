@@ -38,7 +38,6 @@ resource "aws_eks_cluster" "example" {
 
   vpc_config {
     subnet_ids = data.aws_subnets.public.ids
-    availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
   }
 
   depends_on = [
